@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+}
+
+#projects .project {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  header nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
