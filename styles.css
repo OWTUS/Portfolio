@@ -62,22 +62,24 @@ header nav a:hover {
 /* Projects Section */
 #projects {
   background: #e6e6e6;
+  position: relative;
 }
 
 .shape-circle {
   position: absolute;
   bottom: 10%;
-  right: 15%;
-  width: 100px;
-  height: 100px;
-  background: #cccccc;
-  border-radius: 50%;
-  opacity: 0.8;
+  right: 10%;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.1); /* A subtle gray circle */
+  border-radius: 50%; /* Makes it a circle */
+  z-index: -1; /* Places it behind the text */
 }
 
-/* Skills Section */
+/* Skills Section with Wave Shape */
 #skills {
   background: #d9d9d9;
+  position: relative;
 }
 
 .shape-wave {
@@ -100,6 +102,7 @@ header nav a:hover {
   width: 150px;
   border-radius: 10%;
 }
+
 
 /* Footer */
 footer {
