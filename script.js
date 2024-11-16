@@ -1,17 +1,16 @@
-// Smoothly reveal sections as you scroll
+// Optional JavaScript for Enhancements
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll("header nav a");
 
-  const revealOnScroll = () => {
-    const scrollPos = window.scrollY + window.innerHeight;
-
-    sections.forEach(section => {
-      if (section.offsetTop < scrollPos - 100) {
-        section.classList.add("active");
-      }
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
     });
-  };
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll(); // Run on load in case some sections are in view
+  });
 });
