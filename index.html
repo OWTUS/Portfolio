@@ -3,59 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- About Section -->
-  <div id="about" class="section">
-    <h1>About Me</h1>
-    <p>Write a short introduction about yourself, your background, and your coding expertise.</p>
-  </div>
-
-  <!-- Projects Section -->
-  <div id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Responsive WebApp</h3>
-      <p>Describe your project, the technologies you used, and any challenges solved.</p>
-      <a href="https://link-to-project.com">View Project</a>
+  <!-- About Me Section -->
+  <section id="about-me">
+    <div class="content-wrapper">
+      <div class="text-content">
+        <h1>About Me</h1>
+        <p>
+          My name is [Your Name], and I am currently studying Software Design with a focus on Virtual Reality and Gaming at [Your College].
+          I have a passion for creating immersive experiences and innovative solutions that bridge technology and user interaction. 
+          My journey in software design has allowed me to explore a wide range of technologies, from responsive web development to game design, 
+          and I’m excited to contribute to the future of interactive media.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="unity-logo.png" alt="Unity Logo" class="tech-logo">
+        <img src="java-logo.png" alt="Java Logo" class="tech-logo">
+        <img src="mysql-logo.png" alt="MySQL Logo" class="tech-logo">
+      </div>
     </div>
-    <!-- Optional Circle Shape -->
-    <div class="shape-circle"></div>
-  </div>
+  </section>
 
   <!-- Skills Section -->
-  <div id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Java Programming</li>
-      <li>Web App Development</li>
-    </ul>
-    <!-- Optional Wave Shape -->
-    <div class="shape-wave"></div>
-  </div>
+  <section id="skills">
+    <div class="content-wrapper">
+      <h1>Skills & Interests</h1>
+      <p>
+        My technical skillset includes expertise in HTML, CSS, JavaScript, Java, and MySQL. I also have experience working with frameworks like Java Facelets for 
+        developing responsive web applications. Additionally, I am deeply interested in game development, virtual reality, and user interface design.
+      </p>
+      <div class="image-container">
+        <img src="html-logo.png" alt="HTML Logo" class="tech-logo">
+        <img src="css-logo.png" alt="CSS Logo" class="tech-logo">
+        <img src="js-logo.png" alt="JavaScript Logo" class="tech-logo">
+      </div>
+    </div>
+  </section>
 
-  <!-- Contact Section -->
-  <div id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: <a href="https://your-profile.com" target="_blank">your-profile</a></p>
-  </div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="content-wrapper">
+      <h1>Projects</h1>
+      <div class="project">
+        <h2>Web Application Development</h2>
+        <p>
+          I developed a responsive web application using Java Facelets, MySQL, and JavaScript. This project involved creating a user-friendly interface, 
+          dynamic forms, and robust database interactions. It enhanced my understanding of backend and frontend integration.
+        </p>
+        <img src="project-screenshot.png" alt="Project Screenshot" class="project-image">
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    © 2024 Your Name
+  <!-- Contact Section (Footer) -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out to me via email or LinkedIn!</p>
+      <div class="footer-links">
+        <a href="mailto:your-email@example.com" target="_blank">
+          <img src="email-icon.png" alt="Email Icon" class="contact-icon">
+        </a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon">
+        </a>
+      </div>
+      <p>&copy; 2024 [Your Name]</p>
+    </div>
   </footer>
 </body>
 </html>
